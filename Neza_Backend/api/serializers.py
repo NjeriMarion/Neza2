@@ -3,6 +3,7 @@ from user_registration.models import UserProfile
 from dashboard.models import Dashboard
 from stagetracking.models import OrganizationStageTracking
 from stagetracking.models import OrganizationStage
+from dataUpload.models import ExtractedData,DataUpload
 
 class UserProfileSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
@@ -14,6 +15,12 @@ class DashboardSerializer(serializers.ModelSerializer):
     class Meta:
         model= Dashboard
         fields="__all__"
+
+class DataUploadSerializer(serializers.ModelSerializer):
+    class Meta:
+        model= DataUpload
+        fields="__all__"
+
 
 class ExtractedDataSerializer(serializers.ModelSerializer):
     class Meta:
