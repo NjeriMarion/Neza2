@@ -1,9 +1,9 @@
 asgiref==3.7.2
 cffi==1.15.1
 cryptography==41.0.3
-# Django
+Django
 django-rest-knox==4.2.0
-djangorestframework==3.14.0
+djangorestframework
 gunicorn==21.2.0
 packaging==23.1
 psycopg2-binary==2.9.7
