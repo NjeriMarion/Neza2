@@ -3,7 +3,9 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from rest_framework import generics
 from user_registration.models import UserProfile
+from dashboard.models import Dashboard
 from .serializers import UserProfileSerializer
+from .serializers import DashboardSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
@@ -109,3 +111,10 @@ def logout(request):
         
         except Exception as e:
             return Response({'error':str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        
+class DashboardListView(APIView):
+    def get(self,request):
+        location_details = Dashboard.objects.all()
+        serializer = DashboardSerializer(location_details, many=True)
+        return Response(serializer.data)
+    

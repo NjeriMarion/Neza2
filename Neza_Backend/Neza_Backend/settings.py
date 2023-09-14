@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'api',
     'phonenumber_field',
+    'dashboard',
 ]
 
 REST_FRAMEWORK = {
