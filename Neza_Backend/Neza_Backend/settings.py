@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'api',
     'phonenumber_field',
     'dashboard',
+    'stagetracking',
 ]
 
 REST_FRAMEWORK = {
