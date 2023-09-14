@@ -15,6 +15,11 @@ class DashboardSerializer(serializers.ModelSerializer):
         model= Dashboard
         fields="__all__"
 
+class ExtractedDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExtractedData
+        fields = '__all__'
+
 class StageTrackingSerializer(serializers.ModelSerializer):
     class Meta:
         model=OrganizationStageTracking
