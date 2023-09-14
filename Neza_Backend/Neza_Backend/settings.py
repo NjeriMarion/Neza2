@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-+3ify^35=3t=b^j!id09qd!#x8cb1bp()1&o_7#0#)zpp#i@(w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -98,12 +97,12 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Neza',
         'USER': 'postgres',
-        'PASSWORD': 'tlw',
-        'HOST': 'localhost',
+        'PASSWORD': 'ccVEZoYlZgb5XWhBTYPHoH0a61FppoQn',
+        'HOST': 'dpg-ck1ip99gbqfc739gql90-a.oregon-postgres.render.com',
         'PORT': '5432',
     },
 }
-
+# postgres://nezadb_user:@/nezadb
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
