@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-+3ify^35=3t=b^j!id09qd!#x8cb1bp()1&o_7#0#)zpp#i@(w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'dashboard',
     'stagetracking',
+    'dataUpload',
+    
 ]
 
 REST_FRAMEWORK = {
